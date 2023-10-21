@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginForm from "./LoginForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col flex-auto w-full h-screen">
+      <div className="h-full">
+        <div className="grid grid-cols-3 h-full">
+          <div className="bg-blue-900"></div>
+          <div className="col-span-2 flex justify-center items-center">
+            <div className="min-w-[450] px-8">
+              <div className="mb-8">
+                <h1 className="text-3xl font-medium">Welcome back</h1>
+                <p>Please enter your crendentials to login in!</p>
+
+              </div>
+              <LoginForm />
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
   );
 }
