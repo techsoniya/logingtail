@@ -74,7 +74,7 @@ const LoginForm = () => {
   return (
     <>
       {/* <Navbar /> */}
-      {/* <img src={bgimage} alt="bg" className="absolute left-20 top-20 w-80 h-100"/> */}
+      
   
         <form
           className="w-96 bg-gray-100 p-6 rounded shadow-outline shadow-2xl" style={{
